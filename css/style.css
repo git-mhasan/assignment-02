@@ -41,7 +41,7 @@
     padding: 15px;
     border: none;
     border-radius: 5px;
-    box-shadow: gray;
+    box-shadow: 0 0 30px  lightgray;
 }
 
 /* website visual part */
@@ -50,7 +50,7 @@ body{
     background-color: var(--page-background-color);
 }
 
-/* Navigation bar */
+/* Navigation bar design*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -90,6 +90,8 @@ nav{
     display: none;
 }
 
+/* Top banner design */
+
 .banner{
     
     display: grid;
@@ -127,7 +129,7 @@ nav{
     transform: rotateY(360deg);
     transition: transform 1s ease-out;
 }
-
+/* Brands Logo section */
 .brands-logo{
     display: flex;
     margin: 10px;
@@ -138,6 +140,59 @@ nav{
 .brands-logo img{
     margin:0 20px;
 }
+
+/* Popular collection section design */
+.pop-coll-headline{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.img-holder{
+    /* width: 350px; */
+}
+.img-holder img{
+    width: 100%;
+}
+
+
+.ratings{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    color: var(--card-txt-color);
+    font-size: 12px;
+}
+
+.ratted{
+    color: orange;
+}
+
+.ratted-txt{
+    padding: 0 10px;
+    font-size: 14px;
+
+}
+
+.product-description{
+    color: var(--card-txt-color);
+}
+
+.explore-btn{
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    align-items: center;
+    color: var(--button-back-color);
+    cursor: pointer;
+}
+.explore-btn i{
+    padding: 0 10px;
+}
+
+
+
 /* footer design */
 footer{
     padding: 20px;
