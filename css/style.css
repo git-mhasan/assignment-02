@@ -207,6 +207,16 @@ nav{
 }
 
 /* Product Review Design */
+.prod-review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prod-review h1{
+    text-align: center;
+}
+
 .review{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -246,22 +256,41 @@ footer{
 @media only screen and (max-width: 600px) {
     .container{
         max-width: 600px;
-        /* max-height: 600px; */
         margin: 5px auto;
         padding: 10px 10px;
     }
+
+    /* Navigation bar */
+    .nav-bar{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-logo{
+        order:2
+    }
+    .nav-logo h3{
+        text-align: center;
+    }
+
     .nav-menu-list{
         display: none;
     }
-    .nav-menu-icon{
+    .nav-menu{
+        order: 3;
+        justify-content: flex-end;
+    }
+    .search-icon{
         display: none;
     }
     .nav-ham-icon{
-        display:flex;
+        display: flex;
         justify-content: flex-start;
-        /* position: relative; */
-        
+        margin-left: 15px;
+        order: 1;       
     }
+    
     /* Top Banner Section */
 
     .banner{
@@ -326,7 +355,108 @@ footer{
     }
 }
 
+/* Medium devises- Tablet (600px to 850 px) */
 @media only screen and (min-width: 600px) and (max-width: 850px) {
-    .container {background: green;}
-  }
+    .container{
+        max-width: 850px;
+        /* max-height: 600px; */
+        margin: 10px auto;
+        padding: 10px 10px;
+    }
+    /* Navigation bar */
+    .nav-bar{
+        margin: 5px 20px;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-logo{
+        order:1
+        /* text-align: center; */
+    }
+    .nav-logo h3{
+        text-align: left;
+    }
+
+    .nav-menu{
+        order: 2;
+        justify-content: flex-end;
+        margin-right: 5;
+    }
+    .nav-menu-list>ul>li{
+        padding: 0;
+    }
+    .nav-menu-icon{
+        display: none;
+    }
+    
+
+    /* Top Banner Section */
+
+    .banner{
+        grid-template-columns: 1fr;
+        height: 950px;
+    }
+    .banner-txt{
+        order: 2;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .banner-txt h1{
+        text-align: center;
+    }
+    .banner-txt p{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .banner-img{
+        order: 1;
+    }
+    .banner-img img{
+        width: 75%;
+    }
+
+
+    /* Brands Logo section */
+
+    .brands-logo{
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+    .brands-logo img{
+        width: 8%;
+        margin: 15px;
+    }
+
+    /* Products Section */
+    .products{
+        margin: 15px 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Review Section */
+    .review{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .review-img img{
+        width: 98%;
+        align-items: center;
+    }
+    
+    .review-txt{
+        margin: 20px 0;
+        align-items: center;
+    }
+    .review-txt h1{
+        text-align: center;
+    }
+    .review-txt p{
+        margin: 20px 0;
+        text-align: center;
+    }
+}
   
