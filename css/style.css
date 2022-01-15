@@ -1,0 +1,38 @@
+/* Google font poppins is used */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* clearing all initial margin, padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thematic properties */
+:root{
+    --page-background-color:white;
+    --title-font-size: 24px;
+    --title-font-color: black;
+    --button-back-color:#E02C6D;
+    --button-txt-color: #FFFFFF;
+    --card-title-color: ;
+    --card-txt-color:#787885;
+}
+
+/* Common shared Properties */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.button-primary{
+    background-color: var(--button-back-color);
+    color:var(--button-txt-color);
+    font-weight: 600;
+}
+
+/* website visual section */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--page-background-color);
+}
