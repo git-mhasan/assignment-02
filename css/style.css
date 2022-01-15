@@ -15,7 +15,7 @@
     --title-font-color: black;
     --button-back-color:#E02C6D;
     --button-txt-color: #FFFFFF;
-    --card-title-color: ;
+    --card-title-color: black;
     --card-txt-color:#787885;
 }
 
@@ -50,6 +50,46 @@ body{
     background-color: var(--page-background-color);
 }
 
+/* Navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.nav-logo{
+    margin: 10px;
+    padding: 10px;
+}
+.nav-menu{
+    display: flex;
+    
+}
+
+.nav-menu-list>ul>li{
+    list-style: none;
+    margin: 10px;
+    padding: 0 10px;
+}
+.nav-menu-list a{
+    text-decoration: none;
+}
+.nav-menu-list>ul{
+    display: flex;
+}
+.nav-menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu-icon a{
+    margin: 10px;
+    padding: 0 10px;
+}
+.nav-ham-icon{
+    display: none;
+}
+
 .banner{
     
     display: grid;
@@ -57,14 +97,51 @@ body{
     height: 500px;
     
 }
+.banner-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-right: 20px;
+
+}
+.banner-txt p{
+    margin: 10px 0;
+}
+
 .banner-img{
+    display: flex;
     margin: 20px;
     padding: 10px;
     background-image: url("../images/circle-design.svg");
     background-repeat: no-repeat;
     background-size: 80%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    
 }
-.banner-img:hover{
-    transform: rotateX(36);
 
+.banner-img:hover img{
+    transform: rotateY(360deg);
+    transition: transform 1s ease-out;
+}
+
+/* footer design */
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.social-icon{
+    display: flex;
+}
+.social-icon i{
+    padding: 0 5px;
+    margin: 10px;
 }
