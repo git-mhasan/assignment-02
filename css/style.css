@@ -22,17 +22,49 @@
 /* Common shared Properties */
 .container{
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 10px auto;
+    padding: 10px 30px;
 }
 .button-primary{
     background-color: var(--button-back-color);
     color:var(--button-txt-color);
     font-weight: 600;
+    margin: 5px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: gray;
 }
 
-/* website visual section */
+/* website visual part */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--page-background-color);
+}
+
+.banner{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    
+}
+.banner-img{
+    margin: 20px;
+    padding: 10px;
+    background-image: url("../images/circle-design.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.banner-img:hover{
+    transform: rotateX(36);
+
 }
