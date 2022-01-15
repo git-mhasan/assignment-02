@@ -38,6 +38,7 @@
 .product-card{
     display: flex;
     flex-direction: column;
+    /* margin: 10px; */
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -148,14 +149,26 @@ nav{
     margin-top: 120px;
     margin-bottom: 30px;
 }
-
-.img-holder{
-    /* width: 350px; */
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
+
+/* .img-holder{
+    width: 350px;
+} */
 .img-holder img{
     width: 100%;
 }
 
+.product-price{
+    font-size: 20px;
+    font-size: 400;
+}
 
 .ratings{
     display: flex;
@@ -186,11 +199,28 @@ nav{
     align-items: center;
     color: var(--button-back-color);
     cursor: pointer;
+    margin-bottom: 50px;
 }
 .explore-btn i{
     padding: 0 10px;
+    
 }
 
+/* Product Review Design */
+.review{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    column-gap: 50px;
+}
+
+
+.review-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
 
 
 /* footer design */
